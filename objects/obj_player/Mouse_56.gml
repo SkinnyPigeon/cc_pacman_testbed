@@ -26,7 +26,7 @@ for(var i = 0; i < array_length_1d(obj_store.x_path); i++) {
 //mp_linear_path(player_path, destination_x, destination_y, 3, false);
 if mp_grid_path(room_grid, player_path, x, y, destination_x, destination_y, 0) {
 		draw_path(player_path, destination_x, destination_y, 1);
-		path_start(player_path, 1, path_action_stop, 1);
+		path_start(player_path, 3, path_action_stop, 1);
 }
 
 obj_store.player_x = obj_player.x;
