@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "7c04ff37-7d85-4197-9a98-f0174b36d7b0",
+            "Value": {
+                "id": "924914a2-9a71-40a7-b7d2-90ec737ba466",
+                "resourcePath": "objects\/obj_room_grid\/obj_room_grid.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7f840252-ac85-4d5f-ba8e-940e8f45d75a",
             "Value": {
                 "id": "61551fda-925f-4c9e-b61e-36634d3f9d25",

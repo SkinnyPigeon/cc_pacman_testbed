@@ -8,4 +8,5 @@ if(ready == 0 && obj_store.selection_left > 0) {
 	obj_store.y_path[obj_store.i] = y;
 	obj_store.i++;
 	obj_store.selection_left--;
+	obj_store.selection_used++;
 }
