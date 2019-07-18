@@ -33,3 +33,5 @@ for(var i = 0; i < destination_index; i++) {
 	obj_store.player_x = x;
 	obj_store.player_y = y;
 }
+
+//show_debug_message(x)

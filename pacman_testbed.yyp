@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "d612327c-7f76-40a6-ae3c-436cbffe5416",
+            "Value": {
+                "id": "661e73dd-60c9-426a-aaea-3c9def2f8bce",
+                "resourcePath": "objects\/obj_reset\/obj_reset.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "da5ece7d-3cb9-4c56-9f80-a4c008328bb9",
             "Value": {
                 "id": "b8f5a98e-03d1-427e-898a-aac8a4561318",
