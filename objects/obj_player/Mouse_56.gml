@@ -1,46 +1,49 @@
 /// @description Handles the direction and space array
 
+destination_x = x;
+destination_y = y;
 
-//destination_x = x;
-//destination_y = y;
+destination_index = array_length_1d(obj_store.x_path);
 
-for(var i = 0; i < array_length_1d(obj_store.x_path); i++) {
-	if(obj_store.x_path[i] == x + 32 && obj_store.y_path[i] == y) {
-		//destination_x += 32;
-		//show_debug_message(obj_store.x_path)
-		//show_debug_message(obj_store.y_path)
-	
-		//player_path = path_add();
-		//show_debug_message(x);
-		//show_debug_message(destination_x);
-
-		//if mp_linear_path(player_path, destination_x, y, 3, 0) path_start(player_path, 3, path_action_stop, 0);
+var player_path = path_add();
+for(var i = 0; i < destination_index; i++) {
+	if(obj_store.x_path[i] == destination_x + 32 && obj_store.y_path[i] == destination_y) {
+		destination_x += 32;
+		var right_path = path_add();
+		//path_add_point(right_path, destination_x, destination_y, 3);
+		//path_append(player_path, right_path);
+		mp_linear_path(right_path, destination_x, destination_y, 3, 0);
+		path_start(right_path, 60, path_action_stop, 1)
 		
-		//show_debug_message(x);
-		x += 32;
+	} else if(obj_store.x_path[i] == destination_x - 32 && obj_store.y_path[i] == destination_y) {
+		destination_x -= 32;
+		var left_path = path_add();
+		//path_add_point(left_path, destination_x, destination_y, 3);
+		//path_append(player_path, left_path);
+		mp_linear_path(left_path, destination_x, destination_y, 3, 0);
+		path_start(left_path, 60, path_action_stop, 1)
 		
-	} else if(obj_store.x_path[i] == x - 32 && obj_store.y_path[i] == y) {
-		x -= 32;
-		//destination_x -= 32;
-	} else if(obj_store.y_path[i] == y + 32 && obj_store.x_path[i] == x) {
-		y += 32;
-		//destination_y += 32;
-	} else if(obj_store.y_path[i] == y - 32 && obj_store.x_path[i] == x) {
-		y -= 32;
-		//destination_y -= 32;
+	} else if(obj_store.y_path[i] == destination_y + 32 && obj_store.x_path[i] == destination_x) {
+		destination_y += 32;
+		var down_path = path_add();
+		//path_add_point(down_path, destination_x, destination_y, 3);
+		//path_append(player_path, down_path);
+		mp_linear_path(down_path, destination_x, destination_y, 3, 0);
+		path_start(down_path, 60, path_action_stop, 1)
+		
+	} else if(obj_store.y_path[i] == destination_y - 32 && obj_store.x_path[i] == destination_x) {
+		destination_y -= 32;
+		var up_path = path_add();
+		//path_add_point(up_path, destination_x, destination_y, 3);
+		//path_append(player_path, up_path);
+		mp_linear_path(up_path, destination_x, destination_y, 3, 0);
+		path_start(up_path, 60, path_action_stop, 1)
 	}
-	//path_delete(player_path)
 }
-//path_delete(player_path);
 
-//
 
-//mp_linear_path(player_path, destination_x, destination_y, 3, false);
-//if mp_grid_path(room_grid, player_path, x, y, destination_x, destination_y, 0) {
-		//draw_path(player_path, destination_x, destination_y, 1);
-		//path_set_kind(player_path, 0)
-		//path_start(player_path, 3, path_action_stop, 0);
-//}
 
-obj_store.player_x = obj_player.x;
-obj_store.player_y = obj_player.y;
+
+
+//obj_store.player_x = obj_player.x;
+//obj_store.player_y = obj_player.y;
