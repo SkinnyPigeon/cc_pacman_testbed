@@ -4,7 +4,11 @@
 // Path Coordinates
 x_path = [];
 y_path = [];
+x_path_2d = [];
+y_path_2d = [];
+
 i = 0;
+j = 0;
 
 // Squares left to select
 selection_left = 10;
