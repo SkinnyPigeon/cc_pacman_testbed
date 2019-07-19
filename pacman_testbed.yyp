@@ -66,7 +66,7 @@
             "Key": "0d9b4b07-ae9c-4f32-9b81-177f6093194d",
             "Value": {
                 "id": "8835eee3-3662-486b-9fd7-1cf019a63645",
-                "resourcePath": "scripts\/src_path\/src_path.yy",
+                "resourcePath": "scripts\/scr_path\/scr_path.yy",
                 "resourceType": "GMScript"
             }
         },

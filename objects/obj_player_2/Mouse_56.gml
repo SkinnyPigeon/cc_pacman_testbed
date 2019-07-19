@@ -74,6 +74,8 @@ start_count = 0;
 globalvar end_count; 
 end_count = array_length_1d(final_directions);
 obj_store.path = final_directions;
-obj_path.path_length = moves;
+obj_store.path_length = moves;
 show_debug_message(final_directions)
 show_debug_message(moves)
+
+scr_path();
