@@ -11,8 +11,11 @@ i = 0;
 j = 0;
 
 // Squares left to select
-selection_left = 10;
+selection_left = 20;
 selection_used = 0;
 
-player_x = obj_player.x;
-player_y = obj_player.y;
+//player_x = obj_player.x;
+//player_y = obj_player.y;
+
+player_x = obj_player_2.x;
+player_y = obj_player_2.y;
