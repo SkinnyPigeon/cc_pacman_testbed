@@ -45,59 +45,30 @@ for(var i = 0; i < move_count; i++) {
 	}
 }
 
-show_debug_message(directions)
-
-for(var i = 0; i < array_length_1d(directions) - 1; i++) {
-	if(directions[i] != directions[i + 1]) {
-		final_directions[final_count] = directions[i];
-		moves[final_count] = i;
-		final_count++;
-	} else if(directions[i] == array_length_1d(directions) - 2) {
-		final_directions[final_count] = directions[i];
-		moves[final_count] = i + 1;
-		final_count++;
-	} else if(directions[i] == array_length_1d(directions) - 1) {
-		final_directions[final_count] = directions[i];
-		moves[final_count] = i;
+if(array_length_1d(directions) > 1) {
+	for(var i = 0; i < array_length_1d(directions) - 1; i++) {
+		if(directions[i] != directions[i + 1]) {
+			if(i == array_length_1d(directions) - 2) {
+				final_directions[final_count] = directions[array_length_1d(directions) - 1];
+				moves[final_count] = i;
+			}
+			final_directions[final_count] = directions[i];
+			moves[final_count] = i + 1;
+			final_count++;
+		} else if(i == array_length_1d(directions) - 2) {
+			final_directions[final_count] = directions[i];
+			moves[final_count] = i + 2;
+			final_count++;
+		} else {
+			final_directions[final_count] = directions[array_length_1d(directions) - 1];
+			moves[final_count] = 1;
+		}
 	}
+} else {
+	final_directions[0] = directions[0];
+	moves[0] = 1;
 }
+
 
 show_debug_message(final_directions)
 show_debug_message(moves)
-
-//if(left_count > 0) {
-//		right_count = 0;
-//		down_count = 0;
-//		up_count = 0;
-//		directions[count] = "left";
-//		moves[count] = left_count;
-//		left_count = 0;
-//		count++;
-//	}
-//	if(right_count > 0) {
-//		left_count = 0;
-//		down_count = 0;
-//		up_count = 0;
-//		directions[count] = "right";
-//		moves[count] = right_count;
-//		right_count = 0;
-//		count++;
-//	}
-//	if(down_count > 0) {
-//		right_count = 0;
-//		left_count = 0;
-//		up_count = 0;
-//		directions[count] = "down";
-//		moves[count] = down_count;
-//		down_count = 0;
-//		count++;
-//	}
-//	if(up_count > 0) {
-//		right_count = 0;
-//		left_count = 0;
-//		down_count = 0;
-//		directions[count] = "up";
-//		moves[count] = up_count;
-//		up_count = 0;
-//		count++;
-//	}
