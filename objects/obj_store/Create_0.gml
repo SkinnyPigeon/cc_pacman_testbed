@@ -19,3 +19,6 @@ selection_used = 0;
 
 player_x = obj_player_2.x;
 player_y = obj_player_2.y;
+
+path = [];
+path_length = [];

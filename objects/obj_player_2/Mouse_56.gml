@@ -69,6 +69,11 @@ if(array_length_1d(directions) > 1) {
 	moves[0] = 1;
 }
 
-
+globalvar start_count; 
+start_count = 0;
+globalvar end_count; 
+end_count = array_length_1d(final_directions);
+obj_store.path = final_directions;
+obj_path.path_length = moves;
 show_debug_message(final_directions)
 show_debug_message(moves)
