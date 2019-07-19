@@ -52,11 +52,18 @@ for(var i = 0; i < array_length_1d(directions) - 1; i++) {
 		final_directions[final_count] = directions[i];
 		moves[final_count] = i;
 		final_count++;
+	} else if(directions[i] == array_length_1d(directions) - 2) {
+		final_directions[final_count] = directions[i];
+		moves[final_count] = i + 1;
+		final_count++;
+	} else if(directions[i] == array_length_1d(directions) - 1) {
+		final_directions[final_count] = directions[i];
+		moves[final_count] = i;
 	}
 }
 
 show_debug_message(final_directions)
-show_debug_message(final_count)
+show_debug_message(moves)
 
 //if(left_count > 0) {
 //		right_count = 0;
