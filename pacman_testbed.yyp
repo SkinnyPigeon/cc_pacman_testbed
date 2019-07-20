@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "efd43055-b00c-410a-92b5-0a928f3b9e4c",
+            "Value": {
+                "id": "7e29eb0b-8fd8-45f7-b317-a7aa603d4c15",
+                "resourcePath": "objects\/obj_pinky_2\/obj_pinky_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "763cf929-2030-423f-9850-0cba3b57dfc7",

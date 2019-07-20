@@ -15,11 +15,14 @@ var first_choice = max(abs(x_moves), abs(y_moves));
 for(var i = 0; i < array_length_1d(desired_moves); i++) {
 	if(abs(desired_moves[i]) == first_choice) {
 		var chosen_move = desired_moves[i];
-		show_debug_message(chosen_move)
+		if(i = 0) {
+			var chosen_direction = "x";
+		} else {
+			chosen_direction = "y";
+		}
+		show_debug_message(chosen_move);
 	}
 }
-
-var moves_list = [];
 
 if(start_count - 1 < end_count) {
 	var available_moves = obj_store.path_length[start_count - 1];
@@ -28,8 +31,6 @@ if(start_count - 1 < end_count) {
 	}	
 }
 
-//var path = add_path();
-//mp_linear_path(path, obj_player_2.x + distance, obj_player_2.y, 3, 0);
-//path_start(path, 60, path_action_stop, 1);
 
-
+enemy.chosen_move = chosen_move;
+enemy.chosen_direction = chosen_direction;
