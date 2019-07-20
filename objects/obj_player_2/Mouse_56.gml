@@ -10,36 +10,27 @@ count = 0;
 final_count = 0;
 moves = [];
 
-//right_count = 0
-//left_count = 0
-//down_count = 0
-//up_count = 0
-
 move_count = array_length_1d(obj_store.x_path);
 	
 for(var i = 0; i < move_count; i++) {	
 	if(obj_store.x_path[i] == destination_x + 32 && obj_store.y_path[i] == destination_y) {
 		destination_x += 32;
 		
-		//right_count += 1;
 		directions[count] = "right"
 		count++;
 	} else if(obj_store.x_path[i] == destination_x - 32 && obj_store.y_path[i] == destination_y) {
 		destination_x -= 32;
 
-		//left_count += 1;
 		directions[count] = "left"
 		count++;
 	} else if(obj_store.y_path[i] == destination_y + 32 && obj_store.x_path[i] == destination_x) {
 		destination_y += 32;
 
-		//down_count += 1;
 		directions[count] = "down"
 		count++;
 	} else if(obj_store.y_path[i] == destination_y - 32 && obj_store.x_path[i] == destination_x) {
 		destination_y -= 32;
 
-		//up_count += 1;
 		directions[count] = "up"
 		count++;
 	}
@@ -75,7 +66,5 @@ globalvar end_count;
 end_count = array_length_1d(final_directions);
 obj_store.path = final_directions;
 obj_store.path_length = moves;
-show_debug_message(final_directions)
-show_debug_message(moves)
 
 scr_path();
