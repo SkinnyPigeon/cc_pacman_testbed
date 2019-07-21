@@ -15,10 +15,28 @@ var available_moves = argument5;
 
 //show_message(enemy.chosen_move);
 
-if(chosen_direction == "x") {
+if(chosen_direction == "x" && available_moves > 0) {
 	if(chosen_move < 0){
 		if(place_meeting(x - 32, y, obj_wall)) {
-			show_message("HI")
-		}	
+			//PICK ALTERNATIVE PATH
+		}
+	} else if(chosen_move > 0) {
+		if(place_meeting(x + 32, y, obj_wall)) {
+			//PICK ALTERNATIVE PATH
+			
+		}
 	}
+} else if(chosen_direction == "y"  && available_moves > 0) {
+	if(chosen_move < 0){
+		if(place_meeting(x, y - 32, obj_wall)) {
+			//PICK ALTERNATIVE PATH
+			
+		} 
+	} else if(chosen_move > 0) {
+		if(place_meeting(x, y + 32, obj_wall)) {
+			//PICK ALTERNATIVE PATH
+			
+		}
+	}
+	
 }
