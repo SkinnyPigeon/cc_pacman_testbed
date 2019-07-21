@@ -9,7 +9,7 @@ if(start == 1) {
 	show_debug_message("Alternative Direction: " + string(alternative_move))
 	show_debug_message("Available Moves: " + string(available_moves))
 	
-	scr_enemy_move(self, chosen_move, alternative_move, chosen_direction, alternative_direction, available_moves)
+	scr_enemy_move_3(self, chosen_move, alternative_move, chosen_direction, alternative_direction, available_moves)
 	//if(chosen_direction == "x") {
 	//	if(chosen_move < 0){
 	//		if(place_meeting(x - 32, y, obj_wall)) {
