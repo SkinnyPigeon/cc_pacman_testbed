@@ -65,6 +65,8 @@ if(chosen_direction == "x" && available_moves > 0) {
 		}
 	} else if(chosen_move > 0){
 		//RIGHT
+		show_debug_message("PREVIOUS DIRECTION: " + string(enemy.previous_moves))
+
 		if(!place_meeting(enemy.x + 32, enemy.y, obj_wall) && enemy.previous_moves != "left") {
 			var path = path_add();
 			mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);

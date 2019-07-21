@@ -13,7 +13,15 @@ var chosen_direction = argument3;
 var alternative_direction = argument4;
 var available_moves = argument5;
 
-show_debug_message(available_moves);
+show_debug_message("AVAILABLE_MOVES: " + string(available_moves));
+
+//if(available_moves == 0) {
+//	enemy.previous_moves = 0;
+//}
+
+//if(enemy.previous_moves != 0)  {
+	
+//}
 
 if(chosen_direction == "x" && available_moves > 0) {
 	if(chosen_move < 0){
@@ -23,108 +31,306 @@ if(chosen_direction == "x" && available_moves > 0) {
 			mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
-		} else if(place_meeting(enemy.x - 32, enemy.y, obj_wall) && alternative_move < 0) {
-			if(!place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
-				var path = path_add();
-				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
-				path_start(path, 60, path_action_stop, 1)
-				enemy.available_moves--;
-			}
-		} else if(place_meeting(enemy.x - 32, enemy.y, obj_wall) && alternative_move > 0) {
-			if(!place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+			enemy.previous_moves = "left";
+		} else if(place_meeting(enemy.x - 32, enemy.y, obj_wall) && alternative_move < 0 && !place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+			if(enemy.previous_moves == "down" && !place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
 				var path = path_add();
 				mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
 				path_start(path, 60, path_action_stop, 1)
 				enemy.available_moves--;
+				enemy.previous_moves = "down";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "up";
 			}
+			
+		} else if(place_meeting(enemy.x - 32, enemy.y, obj_wall) && alternative_move > 0 && !place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+			if(enemy.previous_moves == "up" && !place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "up";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "down";
+			}
+			
+		} else if(place_meeting(enemy.x - 32, enemy.y, obj_wall) && alternative_move == 0 && !place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+			if(enemy.previous_moves == "down" && !place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "down";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "up";
+			}
+			
+		} else if(place_meeting(enemy.x - 32, enemy.y, obj_wall) && alternative_move == 0 && !place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+			if(enemy.previous_moves == "up" && !place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "up";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "down";
+			}
+			
 		} else {
 			var path = path_add();
 			mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
+			enemy.previous_moves = "right";
 		}
 	} else if(chosen_move > 0){
 		//RIGHT
+		show_debug_message("PREVIOUS DIRECTION: " + string(enemy.previous_moves))
+
 		if(!place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
 			var path = path_add();
 			mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
-		} else if(place_meeting(enemy.x + 32, enemy.y, obj_wall) && alternative_move < 0) {
-			if(!place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
-				var path = path_add();
-				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
-				path_start(path, 60, path_action_stop, 1)
-				enemy.available_moves--;
-			}
-		} else if(place_meeting(enemy.x + 32, enemy.y, obj_wall) && alternative_move > 0) {
-			if(!place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+			enemy.previous_moves = "right";
+		} else if(place_meeting(enemy.x + 32, enemy.y, obj_wall) && alternative_move < 0 && !place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+			if(enemy.previous_moves == "down" && !place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
 				var path = path_add();
 				mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
 				path_start(path, 60, path_action_stop, 1)
 				enemy.available_moves--;
+				enemy.previous_moves = "down";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "up";
 			}
+			
+		} else if(place_meeting(enemy.x + 32, enemy.y, obj_wall) && alternative_move > 0 && !place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+			if(enemy.previous_moves == "up" && !place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "up";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "down";
+			}
+			
+		} else if(place_meeting(enemy.x + 32, enemy.y, obj_wall) && alternative_move == 0 && !place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+			if(enemy.previous_moves == "down" && !place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "down";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "up";
+			}
+			
+		} else if(place_meeting(enemy.x + 32, enemy.y, obj_wall) && alternative_move == 0 && !place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+			if(enemy.previous_moves == "up" && !place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "up";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "down";
+			}
+			
 		} else {
 			var path = path_add();
 			mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
+			enemy.previous_moves = "left";
 		}
 	}
 } else if(chosen_direction == "y" && available_moves > 0) {
 	if(chosen_move < 0){
-		//DOWN
+		//UP
 		if(!place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
 			var path = path_add();
 			mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
-		} else if(place_meeting(enemy.x, enemy.y - 32, obj_wall) && alternative_move < 0) {
-			if(!place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
-				var path = path_add();
-				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
-				path_start(path, 60, path_action_stop, 1)
-				enemy.available_moves--;
-			}
-		} else if(place_meeting(enemy.x, enemy.y - 32, obj_wall) && alternative_move > 0) {
-			if(!place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+			enemy.previous_moves = "up";
+			
+		} else if(place_meeting(enemy.x, enemy.y - 32, obj_wall) && alternative_move < 0 && !place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
+			if(enemy.previous_moves == "right" && !place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
 				var path = path_add();
 				mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
 				path_start(path, 60, path_action_stop, 1)
 				enemy.available_moves--;
+				enemy.previous_moves = "right";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "left";
 			}
+			
+		} else if(place_meeting(enemy.x, enemy.y - 32, obj_wall) && alternative_move > 0 && !place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+			if(enemy.previous_moves == "left" && !place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "left";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "right";
+			}
+			
+		} else if(place_meeting(enemy.x, enemy.y - 32, obj_wall) && alternative_move == 0 && !place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
+			if(enemy.previous_moves == "right" && !place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "right";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "left";
+			}
+			
+		} else if(place_meeting(enemy.x, enemy.y - 32, obj_wall) && alternative_move == 0 && !place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+			if(enemy.previous_moves == "left" && !place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "left";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "right";
+			}
+			
 		} else {
 			var path = path_add();
 			mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
+			enemy.previous_moves = "down";
 		}
+		
 	} else if(chosen_move > 0){
-		//UP
+		//DOWN
 		if(!place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
 			var path = path_add();
 			mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
-		} else if(place_meeting(enemy.x, enemy.y + 32, obj_wall) && alternative_move < 0) {
-			if(!place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
-				var path = path_add();
-				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
-				path_start(path, 60, path_action_stop, 1)
-				enemy.available_moves--;
-			}
-		} else if(place_meeting(enemy.x, enemy.y + 32, obj_wall) && alternative_move > 0) {
-			if(!place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+			enemy.previous_moves = "down";
+			
+		} else if(place_meeting(enemy.x, enemy.y + 32, obj_wall) && alternative_move < 0 && !place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
+			if(enemy.previous_moves == "right" && !place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
 				var path = path_add();
 				mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
 				path_start(path, 60, path_action_stop, 1)
 				enemy.available_moves--;
+				enemy.previous_moves = "right";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "left";
 			}
+			
+		} else if(place_meeting(enemy.x, enemy.y + 32, obj_wall) && alternative_move > 0 && !place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+			if(enemy.previous_moves == "left" && !place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "left";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "right";
+			}
+			
+		} else if(place_meeting(enemy.x, enemy.y + 32, obj_wall) && alternative_move == 0 && !place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
+			if(enemy.previous_moves == "right" && !place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "right";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "left";
+			}
+			
+		} else if(place_meeting(enemy.x, enemy.y + 32, obj_wall) && alternative_move == 0 && !place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+			if(enemy.previous_moves == "left" && !place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
+				var path = path_add();
+				mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "left";
+			} else {
+				var path = path_add();
+				mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
+				path_start(path, 60, path_action_stop, 1)
+				enemy.available_moves--;
+				enemy.previous_moves = "right";
+			}
+			
 		} else {
 			var path = path_add();
 			mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
+			enemy.previous_moves = "up";
 		}
 	}
 }
+
