@@ -21,9 +21,9 @@ for(var i = 0; i < array_length_1d(desired_moves); i++) {
 			var alternative_move = desired_moves[1];
 		} else {
 			chosen_direction = "y";
-			alternative_direciton = "x";
+			alternative_direction = "x";
 			chosen_move = desired_moves[1];
-			alternative_direction = desired_moves[0];
+			alternative_move = desired_moves[0];
 		}
 	}
 }
