@@ -103,14 +103,6 @@
             }
         },
         {
-            "Key": "5c1380a3-dbe2-4576-88ea-302232f171ff",
-            "Value": {
-                "id": "f9a6c449-c21b-489a-9154-fd3bba25e71f",
-                "resourcePath": "objects\/obj_player\/obj_player.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "5c2a4036-5c29-4f0d-9860-bc05ddaee628",
             "Value": {
                 "id": "93ccc17a-c58f-4744-b2db-98eb450a67c7",
@@ -122,7 +114,7 @@
             "Key": "5d93370b-1c2f-4959-a764-9713039d3f81",
             "Value": {
                 "id": "0101d455-bbb9-4295-a185-da941a5ebb1c",
-                "resourcePath": "objects\/obj_player_2\/obj_player_2.yy",
+                "resourcePath": "objects\/obj_player\/obj_player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -290,15 +282,7 @@
             "Key": "db4137b6-b02b-4f21-9902-88439206471d",
             "Value": {
                 "id": "d61c2246-f67a-49fb-8fe2-3cc6ee64e5ad",
-                "resourcePath": "objects\/obj_blinky_2\/obj_blinky_2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "dbb3f6d4-1da3-41ff-be4c-5b278fd9888e",
-            "Value": {
-                "id": "20342256-4d42-4b78-b566-ee81687894c5",
-                "resourcePath": "objects\/obj_pinky\/obj_pinky.yy",
+                "resourcePath": "objects\/obj_blinky\/obj_blinky.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -322,7 +306,7 @@
             "Key": "efd43055-b00c-410a-92b5-0a928f3b9e4c",
             "Value": {
                 "id": "7e29eb0b-8fd8-45f7-b317-a7aa603d4c15",
-                "resourcePath": "objects\/obj_pinky_2\/obj_pinky_2.yy",
+                "resourcePath": "objects\/obj_pinky\/obj_pinky.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -340,14 +324,6 @@
                 "id": "75eedf29-a43b-47a9-be9e-ab8c0f205da1",
                 "resourcePath": "views\/f9ebce70-00ac-4f32-84b3-dde47c64725a.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "fcfaa9aa-7b41-4889-acad-d179ed07b181",
-            "Value": {
-                "id": "4944baa4-039a-4b77-85c4-254e20c5e0d5",
-                "resourcePath": "objects\/obj_blinky\/obj_blinky.yy",
-                "resourceType": "GMObject"
             }
         }
     ],

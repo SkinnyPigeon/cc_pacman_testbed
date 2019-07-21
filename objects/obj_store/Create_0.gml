@@ -17,8 +17,8 @@ selection_used = 0;
 //player_x = obj_player.x;
 //player_y = obj_player.y;
 
-player_x = obj_player_2.x;
-player_y = obj_player_2.y;
+player_x = obj_player.x;
+player_y = obj_player.y;
 
 path = [];
 path_length = [];
