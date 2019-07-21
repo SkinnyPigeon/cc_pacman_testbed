@@ -22,10 +22,8 @@ if(start_count < end_count) {
 			path_start(path, 16,  path_action_stop, 1);
 			break;
 		case("up"):
-			show_debug_message(obj_player.y)
 			mp_linear_path(path, obj_player.x, obj_player.y - distance, 8, 0);
 			path_start(path, 16,  path_action_stop, 1);
-			show_debug_message(obj_player.y)
 			break;
 	}
 }
