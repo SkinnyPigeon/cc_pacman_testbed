@@ -22,3 +22,5 @@ player_y = obj_player.y;
 
 path = [];
 path_length = [];
+
+selection_is_good = 0;

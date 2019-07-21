@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(start == 1) {
+	previous_moves = 0;
 	start = 0;
 	show_debug_message("Chosen Move: " + string(chosen_move))
 	show_debug_message("Alternative Move: " + string(alternative_move))

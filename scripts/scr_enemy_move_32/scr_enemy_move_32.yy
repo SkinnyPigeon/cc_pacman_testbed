@@ -1,8 +1,8 @@
 {
-    "id": "d77a74df-41ac-407c-aa7d-ca6fb8806908",
+    "id": "f6383c56-69bd-4c6d-92c3-87395b5dc67f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_enemy_move_31",
+    "name": "scr_enemy_move_32",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -290,7 +290,7 @@
             "Key": "d77a74df-41ac-407c-aa7d-ca6fb8806908",
             "Value": {
                 "id": "d007dc1b-b2de-4a75-a499-84e056e2c445",
-                "resourcePath": "scripts\/scr_enemy_move_31\/scr_enemy_move_31.yy",
+                "resourcePath": "scripts\/scr_enemy_move_3\/scr_enemy_move_3.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -346,7 +346,15 @@
             "Key": "f4ae8fea-e1fd-41be-9480-5cada1c1f42d",
             "Value": {
                 "id": "fb781ac1-a9be-4ab2-a74f-1c0f6a12b912",
-                "resourcePath": "scripts\/scr_enemy_move_3\/scr_enemy_move_3.yy",
+                "resourcePath": "scripts\/scr_enemy_move_33\/scr_enemy_move_33.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f6383c56-69bd-4c6d-92c3-87395b5dc67f",
+            "Value": {
+                "id": "4e730325-35b5-4b5f-bf5a-842353b5cef6",
+                "resourcePath": "scripts\/scr_enemy_move_32\/scr_enemy_move_32.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -373,6 +381,7 @@
         "3d2b4e15-b531-446b-9fb1-6c7391538809",
         "f6ca6fdf-4561-4b45-baef-f7424e14ec33",
         "f4ae8fea-e1fd-41be-9480-5cada1c1f42d",
+        "f6383c56-69bd-4c6d-92c3-87395b5dc67f",
         "d77a74df-41ac-407c-aa7d-ca6fb8806908"
     ],
     "tutorial": ""
