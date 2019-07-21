@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "3d2b4e15-b531-446b-9fb1-6c7391538809",
+            "Value": {
+                "id": "545fe295-7f0f-4e5a-aca5-c5f21b7d3ef1",
+                "resourcePath": "scripts\/scr_enemy_move\/scr_enemy_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5c2a4036-5c29-4f0d-9860-bc05ddaee628",
             "Value": {
                 "id": "93ccc17a-c58f-4744-b2db-98eb450a67c7",
@@ -329,7 +337,8 @@
     ],
     "script_order": [
         "0d9b4b07-ae9c-4f32-9b81-177f6093194d",
-        "c8920d31-b4d6-4397-9e0c-0504fb759741"
+        "c8920d31-b4d6-4397-9e0c-0504fb759741",
+        "3d2b4e15-b531-446b-9fb1-6c7391538809"
     ],
     "tutorial": ""
 }
