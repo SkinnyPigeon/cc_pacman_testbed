@@ -17,25 +17,36 @@ var available_moves = argument5;
 
 if(chosen_direction == "x" && available_moves > 0) {
 	if(chosen_move < 0){
-		if(place_meeting(x - 32, y, obj_wall)) {
+		if(place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
 			//PICK ALTERNATIVE PATH
+			show_message("LEFT")
+		} else {
+			var path = path_add();
+			mp_linear_path(path, enemy.x - 32, enemy.y, 32, 0);
+			path_start(path, 60, path_action_stop, 1)
+			enemy.available_moves--;
 		}
+		
+		
 	} else if(chosen_move > 0) {
-		if(place_meeting(x + 32, y, obj_wall)) {
+		if(place_meeting(enemy.x + 32, enemy.y, obj_wall)) {
 			//PICK ALTERNATIVE PATH
-			
+			show_message("RIGHT")
+
 		}
 	}
 } else if(chosen_direction == "y"  && available_moves > 0) {
 	if(chosen_move < 0){
-		if(place_meeting(x, y - 32, obj_wall)) {
+		if(place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
 			//PICK ALTERNATIVE PATH
-			
+			show_message("UP")
+
 		} 
 	} else if(chosen_move > 0) {
-		if(place_meeting(x, y + 32, obj_wall)) {
+		if(place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
 			//PICK ALTERNATIVE PATH
-			
+			show_message("DOWN")
+
 		}
 	}
 	
