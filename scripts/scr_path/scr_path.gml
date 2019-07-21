@@ -10,20 +10,22 @@ if(start_count < end_count) {
 	var path = path_add();
 	switch(obj_store.path[start_count]) {
 		case("right"):
-			mp_linear_path(path, obj_player.x + distance, obj_player.y, 3, 0);
-			path_start(path, 60, path_action_stop, 1);
+			mp_linear_path(path, obj_player.x + distance, obj_player.y, 2, 0);
+			path_start(path, 10, path_action_stop, 1);
 			break;
 		case("left"):
-			mp_linear_path(path, obj_player.x - distance, obj_player.y, 3, 0);
-			path_start(path, 60, path_action_stop, 1);
+			mp_linear_path(path, obj_player.x - distance, obj_player.y, 2, 0);
+			path_start(path, 10, path_action_stop, 1);
 			break;
 		case("down"):
-			mp_linear_path(path, obj_player.x, obj_player.y + distance, 3, 0);
-			path_start(path, 60, path_action_stop, 1);
+			mp_linear_path(path, obj_player.x, obj_player.y + distance, 2, 0);
+			path_start(path, 10, path_action_stop, 1);
 			break;
 		case("up"):
-			mp_linear_path(path, obj_player.x, obj_player.y - distance, 3, 0);
-			path_start(path, 60, path_action_stop, 1);
+			show_debug_message(obj_player.y)
+			mp_linear_path(path, obj_player.x, obj_player.y - distance, 2, 0);
+			path_start(path, 10, path_action_stop, 1);
+			show_debug_message(obj_player.y)
 			break;
 	}
 }
