@@ -21,6 +21,28 @@ if(chosen_direction == "x" && available_moves > 0) {
 			//PICK ALTERNATIVE PATH
 			show_message("LEFT")
 			
+			if(alternative_move < 0) {
+				if(place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
+					
+					show_message("LEFT ALT DOWN")
+				} else {
+					var path = path_add();
+					mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+					path_start(path, 60, path_action_stop, 1)
+					enemy.available_moves--;
+				}
+			} else if(alternative_move > 0) {
+				if(place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
+					
+					show_message("LEFT ALT UP")
+				} else {
+					var path = path_add();
+					mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
+					path_start(path, 60, path_action_stop, 1)
+					enemy.available_moves--;
+				}
+			}
+			
 		} else {
 			var path = path_add();
 			mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
