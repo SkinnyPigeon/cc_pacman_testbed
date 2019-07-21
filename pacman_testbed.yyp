@@ -114,7 +114,7 @@
             "Key": "3d2b4e15-b531-446b-9fb1-6c7391538809",
             "Value": {
                 "id": "545fe295-7f0f-4e5a-aca5-c5f21b7d3ef1",
-                "resourcePath": "scripts\/scr_enemy_move\/scr_enemy_move.yy",
+                "resourcePath": "scripts\/scr_enemy_move_1\/scr_enemy_move_1.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -362,7 +362,7 @@
             "Key": "f4ae8fea-e1fd-41be-9480-5cada1c1f42d",
             "Value": {
                 "id": "fb781ac1-a9be-4ab2-a74f-1c0f6a12b912",
-                "resourcePath": "scripts\/scr_enemy_move_3\/scr_enemy_move_3.yy",
+                "resourcePath": "scripts\/scr_enemy_move\/scr_enemy_move.yy",
                 "resourceType": "GMScript"
             }
         },

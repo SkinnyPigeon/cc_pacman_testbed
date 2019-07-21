@@ -9,3 +9,4 @@ available_moves = 0;
 start = 0;
 
 moves_taken = 0;
+previous_moves = 0;
