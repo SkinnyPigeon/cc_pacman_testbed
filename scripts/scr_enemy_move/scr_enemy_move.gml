@@ -20,9 +20,10 @@ if(chosen_direction == "x" && available_moves > 0) {
 		if(place_meeting(enemy.x - 32, enemy.y, obj_wall)) {
 			//PICK ALTERNATIVE PATH
 			show_message("LEFT")
+			
 		} else {
 			var path = path_add();
-			mp_linear_path(path, enemy.x - 32, enemy.y, 32, 0);
+			mp_linear_path(path, enemy.x - 32, enemy.y, 3, 0);
 			path_start(path, 60, path_action_stop, 1)
 			enemy.available_moves--;
 		}
@@ -33,20 +34,36 @@ if(chosen_direction == "x" && available_moves > 0) {
 			//PICK ALTERNATIVE PATH
 			show_message("RIGHT")
 
+		} else {
+			var path = path_add();
+			mp_linear_path(path, enemy.x + 32, enemy.y, 3, 0);
+			path_start(path, 60, path_action_stop, 1)
+			enemy.available_moves--;
 		}
-	}
+	} 
+	
 } else if(chosen_direction == "y"  && available_moves > 0) {
 	if(chosen_move < 0){
 		if(place_meeting(enemy.x, enemy.y - 32, obj_wall)) {
 			//PICK ALTERNATIVE PATH
 			show_message("UP")
 
-		} 
+		} else {
+			var path = path_add();
+			mp_linear_path(path, enemy.x, enemy.y - 32, 3, 0);
+			path_start(path, 60, path_action_stop, 1)
+			enemy.available_moves--;
+		}
 	} else if(chosen_move > 0) {
 		if(place_meeting(enemy.x, enemy.y + 32, obj_wall)) {
 			//PICK ALTERNATIVE PATH
 			show_message("DOWN")
 
+		} else {
+			var path = path_add();
+			mp_linear_path(path, enemy.x, enemy.y + 32, 3, 0);
+			path_start(path, 60, path_action_stop, 1)
+			enemy.available_moves--;
 		}
 	}
 	
