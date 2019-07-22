@@ -60,7 +60,7 @@ if(obj_store.selection_is_good == 1) {
 		final_directions[0] = directions[0];
 		moves[0] = 1;
 	}
-
+	layer_destroy(global.asset_layer);
 	globalvar start_count; 
 	start_count = 0;
 	globalvar end_count; 
