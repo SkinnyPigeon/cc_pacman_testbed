@@ -10,3 +10,5 @@ start = 0;
 
 moves_taken = 0;
 previous_moves = 0;
+
+reverse_flag = 0;
