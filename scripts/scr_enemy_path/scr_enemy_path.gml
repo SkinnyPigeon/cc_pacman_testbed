@@ -36,6 +36,13 @@ if(start_count - 1 >= 0 && start_count - 1 < end_count) {
 	}	
 }
 
+if(enemy.pill_count_down > 0) {
+	enemy.pill_count_down--
+}
+
+if(enemy.pill_count_down == 0) {
+	enemy.reverse_flag = 0;
+}
 
 enemy.chosen_move = chosen_move;
 enemy.alternative_move = alternative_move;

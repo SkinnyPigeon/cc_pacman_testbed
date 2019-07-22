@@ -14,11 +14,12 @@ var alternative_direction = argument4;
 var available_moves = argument5;
 
 //When turning, it resets the enemy's movement count
-show_message(chosen_move);
 if(enemy.reverse_flag == 1) {
 	chosen_move = chosen_move * -1;
 }
-show_message(chosen_move)
+
+
+
 if(chosen_direction == "x" && available_moves > 0) {
 
 	if(chosen_move < 0){

@@ -4,3 +4,4 @@
 var enemy = argument0;
 
 enemy.reverse_flag = 1;
+enemy.pill_count_down = 6;

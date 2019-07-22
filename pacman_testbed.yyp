@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "36084ae2-095e-4bda-a7e2-18a192e6905b",
+            "Value": {
+                "id": "1508bd90-d2a5-4b2f-9bb8-a02b937dce05",
+                "resourcePath": "scripts\/scr_eat_enemies\/scr_eat_enemies.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "396904f4-0ac4-436f-8155-ba6ea5be9fe5",
             "Value": {
                 "id": "abbfb254-9d74-4d1c-bb2e-caf053a44c93",
@@ -403,7 +411,8 @@
         "0d9b4b07-ae9c-4f32-9b81-177f6093194d",
         "c8920d31-b4d6-4397-9e0c-0504fb759741",
         "f4ae8fea-e1fd-41be-9480-5cada1c1f42d",
-        "7db2e366-8bd6-4abb-b98f-9df766eb19d2"
+        "7db2e366-8bd6-4abb-b98f-9df766eb19d2",
+        "36084ae2-095e-4bda-a7e2-18a192e6905b"
     ],
     "tutorial": ""
 }

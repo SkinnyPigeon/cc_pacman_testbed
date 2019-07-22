@@ -12,3 +12,6 @@ moves_taken = 0;
 previous_moves = 0;
 
 reverse_flag = 0;
+pill_count_down = 0;
+
+eaten = 0;
