@@ -1,14 +1,14 @@
 {
-    "id": "bc6c65b5-af95-47f8-831e-4e7e5fca7f76",
+    "id": "732dcd78-55aa-4809-b865-de69a3d2b285",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_wall",
+    "name": "obj_water_top",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "bc6c65b5-af95-47f8-831e-4e7e5fca7f76",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -23,7 +23,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": true,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "solid": false,
+    "spriteId": "b5efb0e0-ca92-4772-b195-9c33f4b68c9c",
     "visible": true
 }
