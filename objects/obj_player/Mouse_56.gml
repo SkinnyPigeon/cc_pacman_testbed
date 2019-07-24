@@ -67,7 +67,7 @@ if(obj_store.selection_is_good == 1) {
 	end_count = array_length_1d(final_directions);
 	obj_store.path = final_directions;
 	obj_store.path_length = moves;
-	obj_store.selection_is_good = 0;
+	//obj_store.selection_is_good = 0;
 	scr_path();
 }
 	
