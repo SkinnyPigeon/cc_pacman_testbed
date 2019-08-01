@@ -16,7 +16,7 @@
         "ac8582f4-2b74-4bc7-86b4-b591d5a5b399"
     ],
     "filterType": "GMObject",
-    "folderName": "sand",
+    "folderName": "solids",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

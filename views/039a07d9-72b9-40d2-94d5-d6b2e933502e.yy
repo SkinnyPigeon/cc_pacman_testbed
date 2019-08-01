@@ -19,7 +19,7 @@
         "b242c7fd-faab-4faf-9f5b-02f2a90bf038"
     ],
     "filterType": "GMObject",
-    "folderName": "water",
+    "folderName": "liquids",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -58,7 +58,7 @@
             "Key": "06b298a2-0820-412b-b075-c1d6581076f2",
             "Value": {
                 "id": "83f32363-9a6c-435a-a34d-39fbc21959ce",
-                "resourcePath": "objects\/obj_water_bottom\/obj_water_bottom.yy",
+                "resourcePath": "objects\/obj_liquid_bottom\/obj_liquid_bottom.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -66,7 +66,7 @@
             "Key": "0835b004-5dbc-4b56-9d1d-c9eaa0b97219",
             "Value": {
                 "id": "bee91963-7fc6-4c4a-801b-59ebb0cbe072",
-                "resourcePath": "objects\/obj_water_bottom_left\/obj_water_bottom_left.yy",
+                "resourcePath": "objects\/obj_liquid_bottom_left\/obj_liquid_bottom_left.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -106,7 +106,7 @@
             "Key": "14230cfe-93fb-427a-8267-74a13927dae1",
             "Value": {
                 "id": "4c347a93-a8dc-46ea-b931-d875a43b7049",
-                "resourcePath": "objects\/obj_sand2\/obj_sand2.yy",
+                "resourcePath": "objects\/obj_solid2\/obj_solid2.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -138,7 +138,7 @@
             "Key": "1e5f280e-5357-4a3d-a5e9-b690636a5cd2",
             "Value": {
                 "id": "224c7d0d-2c8f-4851-9560-25640b0d0c68",
-                "resourcePath": "objects\/obj_water_bottom_right_corner\/obj_water_bottom_right_corner.yy",
+                "resourcePath": "objects\/obj_liquid_bottom_right_corner\/obj_liquid_bottom_right_corner.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -146,7 +146,7 @@
             "Key": "1ec233ce-f794-452a-be78-0596021a64ea",
             "Value": {
                 "id": "fd1d066a-dcbb-4ada-82fb-607f213defcc",
-                "resourcePath": "sprites\/right_junction\/right_junction.yy",
+                "resourcePath": "sprites\/right_junction_sand\/right_junction_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -170,7 +170,7 @@
             "Key": "21699d1c-d727-456a-8ea8-88fb3276d301",
             "Value": {
                 "id": "608d9216-a857-4514-95d7-214dc8faced7",
-                "resourcePath": "sprites\/water_top_right_corner\/water_top_right_corner.yy",
+                "resourcePath": "sprites\/water_top_right_corner_sand\/water_top_right_corner_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -178,7 +178,7 @@
             "Key": "26135104-a0be-4feb-806d-d2574e323db0",
             "Value": {
                 "id": "e0fa7da4-d912-4693-8249-906a6c711555",
-                "resourcePath": "sprites\/water_center\/water_center.yy",
+                "resourcePath": "sprites\/water_center_sand\/water_center_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -186,7 +186,7 @@
             "Key": "271e84a8-3549-49b3-8e3c-5e6025e65901",
             "Value": {
                 "id": "683ec986-4c41-4fa0-9dd0-889486d18dbe",
-                "resourcePath": "sprites\/bottom_right\/bottom_right.yy",
+                "resourcePath": "sprites\/bottom_right_sand\/bottom_right_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -226,7 +226,7 @@
             "Key": "325d229c-7901-4ad9-b15b-97445bf3b8e0",
             "Value": {
                 "id": "f625cf10-2910-4a98-aa4f-68c54193fc90",
-                "resourcePath": "objects\/obj_sand6\/obj_sand6.yy",
+                "resourcePath": "objects\/obj_solid6\/obj_solid6.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -234,7 +234,7 @@
             "Key": "33c3d60c-9477-4745-a92d-525b3058ccb0",
             "Value": {
                 "id": "d0e1ae1f-6d40-439f-a167-83f1e2cdbf3e",
-                "resourcePath": "sprites\/water_bottom_right_corner\/water_bottom_right_corner.yy",
+                "resourcePath": "sprites\/water_bottom_right_corner_sand\/water_bottom_right_corner_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -250,7 +250,7 @@
             "Key": "3668ae2e-62ed-4df8-b290-d833ba7966c1",
             "Value": {
                 "id": "c2b7ce3d-8d4c-4ec8-b915-7b967bd91408",
-                "resourcePath": "objects\/obj_sand9\/obj_sand9.yy",
+                "resourcePath": "objects\/obj_solid9\/obj_solid9.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -274,7 +274,7 @@
             "Key": "3a42c2a8-762a-4772-b539-ad7beece216f",
             "Value": {
                 "id": "5c07aad2-cc96-440b-b0a8-96cb8b7a657c",
-                "resourcePath": "objects\/obj_water_right\/obj_water_right.yy",
+                "resourcePath": "objects\/obj_liquid_right\/obj_liquid_right.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -282,7 +282,7 @@
             "Key": "3da45950-d00f-4148-95ea-01b5d2099471",
             "Value": {
                 "id": "2c16de96-9b9a-4e3e-a69f-2df6aa8cf1b3",
-                "resourcePath": "sprites\/bottom_junction\/bottom_junction.yy",
+                "resourcePath": "sprites\/bottom_junction_sand\/bottom_junction_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -290,7 +290,7 @@
             "Key": "455caa8b-bca5-462b-a846-90aab8164e2f",
             "Value": {
                 "id": "3ae2cd24-5846-4a0b-b74a-c38ef1f05051",
-                "resourcePath": "sprites\/water_bottom\/water_bottom.yy",
+                "resourcePath": "sprites\/water_bottom_sand\/water_bottom_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -330,7 +330,7 @@
             "Key": "4e7993fb-e057-49cc-81bd-e53f290804a3",
             "Value": {
                 "id": "b9ad74e3-cc05-4479-9b67-295674a0d2b0",
-                "resourcePath": "objects\/obj_water_bottom_left_corner\/obj_water_bottom_left_corner.yy",
+                "resourcePath": "objects\/obj_liquid_bottom_left_corner\/obj_liquid_bottom_left_corner.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -362,7 +362,7 @@
             "Key": "607fa72d-0a81-4d95-846e-636068e45583",
             "Value": {
                 "id": "654d08c6-308a-4b7e-ae0e-1a99147c9f23",
-                "resourcePath": "sprites\/water_bottom_right\/water_bottom_right.yy",
+                "resourcePath": "sprites\/water_bottom_right_sand\/water_bottom_right_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -418,7 +418,7 @@
             "Key": "6e6600f7-3067-4c47-b881-f65ecd6d6c8f",
             "Value": {
                 "id": "9810b3f5-a208-4cd0-bdfe-18906c52a3f9",
-                "resourcePath": "objects\/obj_sand5\/obj_sand5.yy",
+                "resourcePath": "objects\/obj_solid5\/obj_solid5.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -450,7 +450,7 @@
             "Key": "72a93597-99b1-456a-a6ca-b6943082d874",
             "Value": {
                 "id": "bdd9cea1-5380-4cc4-a68d-5da815d195cf",
-                "resourcePath": "sprites\/center\/center.yy",
+                "resourcePath": "sprites\/center_sand\/center_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -458,7 +458,7 @@
             "Key": "732dcd78-55aa-4809-b865-de69a3d2b285",
             "Value": {
                 "id": "6c4d4873-2d07-404d-b7d7-5ddf72f53e1f",
-                "resourcePath": "objects\/obj_water_top\/obj_water_top.yy",
+                "resourcePath": "objects\/obj_liquid_top\/obj_liquid_top.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -466,7 +466,7 @@
             "Key": "74af8622-fc50-4288-b8dd-dc839a8aae35",
             "Value": {
                 "id": "ace95ee9-51b6-41bc-9df3-efb0afca2a60",
-                "resourcePath": "sprites\/water_bottom_left_corner\/water_bottom_left_corner.yy",
+                "resourcePath": "sprites\/water_bottom_left_corner_sand\/water_bottom_left_corner_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "93526561-b621-419b-8cd8-6ae463082d7f",
+            "Value": {
+                "id": "188d946a-ae82-409a-a751-15e949c03912",
+                "resourcePath": "views\/93526561-b621-419b-8cd8-6ae463082d7f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "95c17bc8-b09e-4f6e-8c4f-5adebe95ce7f",
             "Value": {
                 "id": "738654f3-014c-46f7-951d-6dc5a8a31b30",
@@ -602,7 +610,7 @@
             "Key": "9a036faa-2020-4fa4-bb7f-6512f95e9f0b",
             "Value": {
                 "id": "597281b4-a84a-48dd-9fb1-abcf6c87d1db",
-                "resourcePath": "objects\/obj_water_top_right\/obj_water_top_right.yy",
+                "resourcePath": "objects\/obj_liquid_top_right\/obj_liquid_top_right.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -610,7 +618,7 @@
             "Key": "9a2751a5-cfc4-4184-b4af-932727aa6d3e",
             "Value": {
                 "id": "895ca8b4-c378-4299-a620-734bc894dfd2",
-                "resourcePath": "objects\/obj_sand8\/obj_sand8.yy",
+                "resourcePath": "objects\/obj_solid8\/obj_solid8.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -618,7 +626,7 @@
             "Key": "9a5c6d50-1f45-43e6-938d-d3c2bd9e6736",
             "Value": {
                 "id": "099beb03-27c4-441c-bc2b-9ec4a0f6cbea",
-                "resourcePath": "objects\/obj_sand1\/obj_sand1.yy",
+                "resourcePath": "objects\/obj_solid1\/obj_solid1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -626,7 +634,7 @@
             "Key": "9c11b341-ec4b-4019-98f0-460f660994f7",
             "Value": {
                 "id": "22ae421a-5607-4296-a82a-a4e094871bad",
-                "resourcePath": "sprites\/bottom_left\/bottom_left.yy",
+                "resourcePath": "sprites\/bottom_left_sand\/bottom_left_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -634,8 +642,16 @@
             "Key": "9d946f36-3d7e-4ff6-92a6-070133cd0392",
             "Value": {
                 "id": "29137f02-53e3-4e12-87a0-20435872de65",
-                "resourcePath": "objects\/obj_water_left\/obj_water_left.yy",
+                "resourcePath": "objects\/obj_liquid_left\/obj_liquid_left.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9f4d7065-5c20-4fe4-bd7d-6001a9b924bd",
+            "Value": {
+                "id": "0dbbfa58-b5f8-4274-b3af-751159cd4113",
+                "resourcePath": "views\/9f4d7065-5c20-4fe4-bd7d-6001a9b924bd.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -650,7 +666,7 @@
             "Key": "a1570140-a365-4a54-8c6f-8ec9d2118e12",
             "Value": {
                 "id": "0c0a211c-c789-4254-8061-83e309d96c7c",
-                "resourcePath": "sprites\/top_left\/top_left.yy",
+                "resourcePath": "sprites\/top_left_sand\/top_left_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -658,7 +674,7 @@
             "Key": "a3139bf0-28b2-4146-92d6-5eb4cd9aa00f",
             "Value": {
                 "id": "3e8997b8-1957-4736-9e9e-f171144515a2",
-                "resourcePath": "sprites\/up\/up.yy",
+                "resourcePath": "sprites\/up_sand\/up_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -666,7 +682,7 @@
             "Key": "a3677cd7-f951-45a4-9620-13c3ddd48dd5",
             "Value": {
                 "id": "938260fc-392d-44d4-a320-641ef65dd4b2",
-                "resourcePath": "sprites\/water_left\/water_left.yy",
+                "resourcePath": "sprites\/water_left_sand\/water_left_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -698,7 +714,7 @@
             "Key": "ac8582f4-2b74-4bc7-86b4-b591d5a5b399",
             "Value": {
                 "id": "035d753e-c9da-4629-a86e-cdda4ce5ce2b",
-                "resourcePath": "objects\/obj_sand10\/obj_sand10.yy",
+                "resourcePath": "objects\/obj_solid10\/obj_solid10.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -722,7 +738,7 @@
             "Key": "b242c7fd-faab-4faf-9f5b-02f2a90bf038",
             "Value": {
                 "id": "7499a2d0-8dc2-47d8-88b3-858dbb04b314",
-                "resourcePath": "objects\/obj_water_top_right_corner\/obj_water_top_right_corner.yy",
+                "resourcePath": "objects\/obj_liquid_top_right_corner\/obj_liquid_top_right_corner.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -738,7 +754,7 @@
             "Key": "b5efb0e0-ca92-4772-b195-9c33f4b68c9c",
             "Value": {
                 "id": "ecc0c5f1-6735-4211-89d0-9cbf6cd96caf",
-                "resourcePath": "sprites\/water_top\/water_top.yy",
+                "resourcePath": "sprites\/water_top_sand\/water_top_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -746,7 +762,7 @@
             "Key": "bb420299-5ba6-4bf6-aeaf-f841267e29cf",
             "Value": {
                 "id": "0f25ede2-a301-47bc-a9df-738c48638753",
-                "resourcePath": "sprites\/top_right\/top_right.yy",
+                "resourcePath": "sprites\/top_right_sand\/top_right_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -754,7 +770,7 @@
             "Key": "bb608265-9e60-4c19-8fc1-0c1556ff74d8",
             "Value": {
                 "id": "5c5a13ac-fbef-43aa-b6cd-74523f40ec44",
-                "resourcePath": "sprites\/water_top_left\/water_top_left.yy",
+                "resourcePath": "sprites\/water_top_left_sand\/water_top_left_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -778,7 +794,7 @@
             "Key": "c28c95ee-2bda-498c-9abc-f9da568ea882",
             "Value": {
                 "id": "50fdc4cb-2b86-4ad7-b859-3f9d15850367",
-                "resourcePath": "objects\/obj_water_top_left_corner\/obj_water_top_left_corner.yy",
+                "resourcePath": "objects\/obj_liquid_top_left_corner\/obj_liquid_top_left_corner.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -826,7 +842,7 @@
             "Key": "cd9493fc-07e2-4b47-b33f-608dafde4d7b",
             "Value": {
                 "id": "55e4dae8-4bc9-4e3b-96b3-116f86339df9",
-                "resourcePath": "objects\/obj_water_center\/obj_water_center.yy",
+                "resourcePath": "objects\/obj_liquid_center\/obj_liquid_center.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -834,7 +850,7 @@
             "Key": "d344b2ed-e36f-4460-ba2a-188f082edc10",
             "Value": {
                 "id": "f50a9cec-db25-409b-9277-c6f6fcfeac1e",
-                "resourcePath": "sprites\/water_top_right\/water_top_right.yy",
+                "resourcePath": "sprites\/water_top_right_sand\/water_top_right_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -850,7 +866,7 @@
             "Key": "d5aae457-7e58-4734-9d79-ba05181b7635",
             "Value": {
                 "id": "b089b614-b0d9-4ffd-8722-94a89f5b45bb",
-                "resourcePath": "sprites\/side\/side.yy",
+                "resourcePath": "sprites\/side_sand\/side_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -866,7 +882,7 @@
             "Key": "d7d2ed87-f95b-477c-8321-6c3240f0866d",
             "Value": {
                 "id": "938b29c8-d5ee-4215-a7b6-046e28437e58",
-                "resourcePath": "objects\/obj_sand3\/obj_sand3.yy",
+                "resourcePath": "objects\/obj_solid3\/obj_solid3.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -882,7 +898,7 @@
             "Key": "d99c0cba-04f9-4a72-a9d0-c0aa6ed108e3",
             "Value": {
                 "id": "f71cd757-2532-48f8-a6f2-0837a5384e2f",
-                "resourcePath": "sprites\/water_bottom_left\/water_bottom_left.yy",
+                "resourcePath": "sprites\/water_bottom_left_sand\/water_bottom_left_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -914,7 +930,7 @@
             "Key": "e460ffa7-1e1c-4c27-8ccf-bd6ce194e0c7",
             "Value": {
                 "id": "56611c67-5544-41d9-89bf-32d520c63507",
-                "resourcePath": "sprites\/top_junction\/top_junction.yy",
+                "resourcePath": "sprites\/top_junction_sand\/top_junction_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -938,7 +954,7 @@
             "Key": "ec2afaaf-b4cd-4d4e-8595-dba1a8f047d3",
             "Value": {
                 "id": "ed663189-f732-49b9-8894-254118d6cb1a",
-                "resourcePath": "sprites\/water_right\/water_right.yy",
+                "resourcePath": "sprites\/water_right_sand\/water_right_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -946,7 +962,7 @@
             "Key": "ef31df8a-56f9-4084-9d80-323aeaafe502",
             "Value": {
                 "id": "fd7a0a39-2a1d-49b9-a82d-7b4110c79aae",
-                "resourcePath": "objects\/obj_sand4\/obj_sand4.yy",
+                "resourcePath": "objects\/obj_solid4\/obj_solid4.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -962,7 +978,7 @@
             "Key": "f213a5dd-349f-45d3-ad68-74c02b528a84",
             "Value": {
                 "id": "7cc6e3a0-1640-4ab9-ad28-b0705c8bf5de",
-                "resourcePath": "sprites\/left_junction\/left_junction.yy",
+                "resourcePath": "sprites\/left_junction_sand\/left_junction_sand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -970,7 +986,7 @@
             "Key": "f2540fa6-8584-4251-b0f6-8d3e44f64cd3",
             "Value": {
                 "id": "fad0fea8-d353-49d7-a9e2-94cbe01a2f18",
-                "resourcePath": "objects\/obj_water_top_left\/obj_water_top_left.yy",
+                "resourcePath": "objects\/obj_liquid_top_left\/obj_liquid_top_left.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -978,7 +994,7 @@
             "Key": "f362260c-d093-4ed7-a6db-3ab4fb634bf4",
             "Value": {
                 "id": "9cd33025-c876-4aef-85d3-15aec97fd782",
-                "resourcePath": "objects\/obj_water_bottom_right\/obj_water_bottom_right.yy",
+                "resourcePath": "objects\/obj_liquid_bottom_right\/obj_liquid_bottom_right.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1010,7 +1026,7 @@
             "Key": "f60dca2e-c5ca-4e7f-9110-1c9f1e31d801",
             "Value": {
                 "id": "0fc71a6a-ccb5-4391-9735-4fef4ec8d410",
-                "resourcePath": "objects\/obj_sand7\/obj_sand7.yy",
+                "resourcePath": "objects\/obj_solid7\/obj_solid7.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1034,7 +1050,7 @@
             "Key": "fba6213d-a21e-408d-b92a-4d1701df70e1",
             "Value": {
                 "id": "9972925b-6ce0-4d0c-a0f7-4cb615e277ac",
-                "resourcePath": "sprites\/water_top_left_corner\/water_top_left_corner.yy",
+                "resourcePath": "sprites\/water_top_left_corner_sand\/water_top_left_corner_sand.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -8,7 +8,7 @@
         "2805bfe1-a773-48e6-a545-9c70f20496bc"
     ],
     "filterType": "GMSprite",
-    "folderName": "walls",
+    "folderName": "walls_sand",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

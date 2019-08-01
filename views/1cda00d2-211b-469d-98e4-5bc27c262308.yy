@@ -17,7 +17,7 @@
         "a3139bf0-28b2-4146-92d6-5eb4cd9aa00f"
     ],
     "filterType": "GMSprite",
-    "folderName": "paths",
+    "folderName": "paths_sand",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
